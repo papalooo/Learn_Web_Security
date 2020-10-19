@@ -99,3 +99,9 @@ Click Jacking, Open Redirect등의
 이때 서버가 제대로 방어를 하지않으면
 Reflected XSS로 이어질 수 있다.
 
+## 해결방안
+  1. Server-side Mitigations
+  2. HTTPOnly 플래그 사용
+  3. Content Security Policy 사용
+  4. X-XSS-Protection
+  
