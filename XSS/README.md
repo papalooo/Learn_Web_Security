@@ -4,6 +4,10 @@
 자바스크립트의 일부로 웹 브라우저에서
 실행되는 취약점을 말한다.
 
+## 목차
+1. [xss를 성공하기 위해서](#xss를-성공하기-위해서)
+2. [XSS with JavaScript](#XSS-with-Javascript)
+
 ## xss를 성공하기 위해서
 
 XSS공격을 성공하기 위해서는
