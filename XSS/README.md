@@ -7,6 +7,9 @@
 ## 목차
 1. [xss를 성공하기 위해서](#xss를-성공하기-위해서)
 2. [XSS with JavaScript](#XSS-with-Javascript)
+3. [Stored XSS](#stored-xss)
+4. [Reflected XSS](#reflected-xss)
+5. [해결방안](#해결방안)
 
 ## xss를 성공하기 위해서
 
