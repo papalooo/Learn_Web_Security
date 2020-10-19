@@ -108,7 +108,7 @@ Reflected XSS로 이어질 수 있다.
 
 ## 해결방안
 
-  1. Server-side Mitigations
-  2. HTTPOnly 플래그 사용
-  3. Content Security Policy 사용
+  1. [Server-side Mitigations](./Server-side.md)
+  2. [HTTPOnly 플래그 사용](./HTPPOnly.md)
+  3. [Content Security Policy 사용](./Content_Security_Policy.md)
   4. X-XSS-Protection
