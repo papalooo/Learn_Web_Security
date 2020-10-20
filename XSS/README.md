@@ -111,6 +111,6 @@ Reflected XSS로 이어질 수 있다.
   1. [Server-side Mitigations](./Server-side.md)
   2. [HTTPOnly 플래그 사용](./HTPPOnly.md)
   3. [Content Security Policy 사용](./CSP.md)
-  4. X-XSS-Protection
+  4. [X-XSS-Protection](./X-XSS-Protection.md)
 
 **[Home](https://github.com/sunrabbit123/Learn_Web_Security)**
