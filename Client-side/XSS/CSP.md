@@ -60,4 +60,4 @@ alert(1)을 호출한 예시입니다.
 [http://csp-evaluator.withgoogle.com](http://csp-evaluator.withgoogle.com)에서
 확인이 가능합니다.
 
-[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](https://github.com/sunrabbit123/Learn_Web_Security/tree/main/XSS)->
+[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](./README.md)->

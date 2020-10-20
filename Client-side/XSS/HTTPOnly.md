@@ -15,4 +15,4 @@ Set-Cookie 헤더를 전송해 쿠키를 생성할 때
 
 
 
-[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](https://github.com/sunrabbit123/Learn_Web_Security/tree/main/XSS)->
+[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](./README.md)->

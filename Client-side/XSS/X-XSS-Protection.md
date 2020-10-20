@@ -35,4 +35,4 @@ XSS Filter는 XSS공격에 대한
 
 
 
-[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](https://github.com/sunrabbit123/Learn_Web_Security/tree/main/XSS)->
+[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](./README.md)->

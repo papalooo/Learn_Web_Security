@@ -66,4 +66,4 @@ WiFi가 변경 될 경우에 IP주소가 지속적으로 변한다는 점에 의
 국가로 탐지하는 형태로 변형되었습니다.
 
 
-[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](https://github.com/sunrabbit123/Learn_Web_Security/tree/main/XSS)->
+[Home](https://github.com/sunrabbit123/Learn_Web_Security) / [Back](./README.md)->
