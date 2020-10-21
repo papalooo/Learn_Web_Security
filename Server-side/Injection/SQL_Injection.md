@@ -146,5 +146,5 @@ Where idx=1;
 
 |idx|boardTitle|boardContent|createdDate|
 |:--|:---------|:-----------|:---|
-|1|Hello|***_DreamHack!_***|20yy-MM-dd HH:mm:ss|
+|1|Hello|__DreamHack!__|20yy-MM-dd HH:mm:ss|
 
