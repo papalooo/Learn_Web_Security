@@ -74,7 +74,7 @@ DB의 접근 권한 등의 설정을 하기 위한 언어이다.
 
 대표적인 예시는 다음과 같다.
 
-- CREATE
+- CREATE</br>
 새로운 데이터베이스 또는 테이블을 생성합니다.
 
 ```SQL
@@ -92,7 +92,7 @@ CREATE TABLE Board(
 | | |
 
 ----- 
-- ALTER
+- ALTER</br>
 데이터베이스 또는 테이블의 속성을 변경한다.
 
 ```SQL
@@ -104,7 +104,7 @@ ALTER TABLE Board ADD createdDate date;
 | | | |
 -----
 
-- DROP
+- DROP</br>
 데이터베이스 또는 테이블을 삭제합니다.
 ```SQL
 DROP TABLE Board;
@@ -114,7 +114,7 @@ DROP TABLE Board;
 ### DML
 `DML` (Data manipulation language)
 
-- INSERT
+- INSERT</br>
 테이블에 새로운 데이터를 추가합니다.
 ```SQL
 INSERT INTO 
@@ -134,7 +134,7 @@ Values(
 
 -----
 
-- UPDATE
+- UPDATE</br>
 테이블에 존재하는 데이터를 수정합니다.
 ```SQL
 UPDATE Board SET
@@ -150,4 +150,6 @@ Where idx=1;
 
 -----
 
-- 
+- SELECT</br>
+테이블에 존재하는 데이터를 조회합니다.
+
