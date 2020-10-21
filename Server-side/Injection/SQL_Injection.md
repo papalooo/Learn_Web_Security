@@ -55,6 +55,7 @@ SQL은 사용 목적과 행우에 따라
 데이터베이스의 **생성/수정/삭제** 등의
 행위를 수행합니다.
 </br>
+
 - [DML](#DML)(Data Manipulation language)
 데이터를 조작하기 위한 언어입니다.
 실제 DB 내의 데이터에 대해
@@ -152,4 +153,32 @@ Where idx=1;
 
 - SELECT</br>
 테이블에 존재하는 데이터를 조회합니다.
+```SQL
+SELECT 
+  boardTitle, boardContent
+FROM
+  Board
+Where
+  idx=1;
+```
+위 명령어를 데이터베이스에 요청하여
+아래와 같은 데이터를 얻을 수 있습니다.
+```txt
+    Hello, DreamHack!
+```
 
+-----
+
+- DELETE</br>
+테이블에 존재하는 데이터를 삭제합니다.
+```SQL
+DELETE From 
+  Board
+Where 
+  idx=1;
+```
+위 명령어를 통해 테이블에 존재하는
+데이터를 삭제할 수 있습니다.
+|idx|boardTitle|boardContent|createdDate|
+|:--|:---------|:-----------|:---|
+|||||
