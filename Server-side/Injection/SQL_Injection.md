@@ -4,7 +4,7 @@
 
 1. [개요](#개요)
 2. [SQL이란](#SQL이란)
-3. [SQL Injection](#SQL%20Injection)
+3. [SQL Injection](#SQL_Injection)
 4. [해결방안](#해결방안)
 
 ## 개요
@@ -184,7 +184,7 @@ Where
 |:--|:---------|:-----------|:---|
 |||||
 
-## SQL Injection
+## SQL_Injection
 
 ### 개요
 사용자의 입력 데이터가 SQL 쿼리에 들어가는
@@ -218,6 +218,7 @@ DBMS에서 사용자가 입력한 쿼리를 실행시킬 수 있다.
 |----|---|---|
 |1|guest|guest|
 |2|admin|********|
+
 이런 테이블 구조를 가질 때,
 `uid = guest`, `upw = guest`를 입력 시
 guest정보를 출력하여 로그인이 됩니다.
