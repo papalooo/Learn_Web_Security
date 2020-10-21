@@ -10,30 +10,23 @@
 
 ## 목차
 
-1. [SQL Injection](./SQL_Injection.md)</br>
+1. [SQL Injection](./SQL_Injection.md)
 SQL 요청을 사용할 때 공격자의 입력 값이
 정상적인 요청에 영향을 주는 취약점이다.
-</br>
 
 2. [Command Injection]
-</br>
 OS Command를 사용 시 사용자의
 입력 데이터에 의해 실행되는
 Command를 변조할 수 있는 취약점이다.
-</br>
 
 3. Server Side Template Injection
-</br>
 
 4. Path Traversal
-</br>
 URL / File Path를 사용 시
 사용자의 입력 데이터에 의해
 임의의 경로에 접근하는 취약점입니다.
-</br>
 
 5. server Side Request Forgery(SSRF)
-</br>
 공격자가 서버에서 변조된 요청을 보낼 수 있는 취약점입니다.
 
 
