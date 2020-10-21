@@ -14,7 +14,7 @@
 SQL 요청을 사용할 때 공격자의 입력 값이
 정상적인 요청에 영향을 주는 취약점이다.
 
-2. [Command Injection]</br>
+2. [Command Injection](./Command_Injection.md)</br>
 OS Command를 사용 시 사용자의
 입력 데이터에 의해 실행되는
 Command를 변조할 수 있는 취약점이다.
