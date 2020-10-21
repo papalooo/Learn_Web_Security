@@ -5,7 +5,6 @@
 1. [개요](#개요)
 2. [SQL이란](#SQL이란)
 3. [SQL Injection](#SQL_Injection)
-4. [해결방안](#해결방안)
 
 ## 개요
 
@@ -186,6 +185,12 @@ Where
 
 ## SQL_Injection
 
+### 목차
+-----
+1. [개요](#개요)
+2. [예시](#예시)
+3. [해결방안](#해결방안)
+
 ### 개요
 사용자의 입력 데이터가 SQL 쿼리에 들어가는
 대표적인 예시로는 로그인 기능이다.
@@ -233,3 +238,50 @@ SQL Injection을 통해 논리적으로 참이 되는
 공격 페이로드를 통해 admin으로
 로그인이 가능합니다.
 
+### 해결방안
+-----
+이를 막기 위해서는
+사용자의 입력 데이터가 SQL쿼리로
+해석되지 않아야 한다.
+
+`'`나 `"`과 같은 문자열 구분자를 
+필터링하는 방법이 있지만,
+이는 권장되지않는 방법이며
+
+권장되는 방법으로는
+`ORM`과 같이 검증된
+SQL라이브러리를 사용하는 방법입니다.
+
+이를 통해 개발자가 직접 쿼리를 작성하는
+Raw 쿼리를 사용하지 않아도
+기능구현이 가능하며,
+SQL Injection으로부터 상대적으로 안전합니다.
+
+이 `ORM`은 Object Relational Mapper의 약자로써
+SQL의 쿼리 작성을 편리하게 돕기 위한 라이브러리입니다.
+이는 생산성을 위해서도 사용되지만
+사용자의 입력 값을 라이브러리 단계에서
+알아서 escape하고 쿼리에 매핑하기에,
+안전하게 SQL 쿼리를 사용가능합니다.
+
+#### 예문
+```python
+from flask_sqlalchemy import SQLAlchemy
+...
+db = SQLAlchemy(...)
+...
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    uid = db.Column(...)
+    upw = db.Column(...)
+    ...
+User.query.filter(User.uid == uid, User.upw == upw).all()
+```
+
+> **주의사항**
+> ORM을 사용하더라도
+> 입력데이터의 타입 검증이 없다면
+> 잠재적인 위협이 될 수 있으니,
+> 입력 데이터의 타입 검증이 필요하다.
+
+[Home](../../README.md) / [Back](./README.md)
