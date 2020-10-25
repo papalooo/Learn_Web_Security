@@ -141,3 +141,16 @@ else:
 ```
 
 ### - OS Command에서 Meta 문자로 사용되는 값을 필터링하고 따옴표로 감싸기
+
+ping을 보내는 페이지의 경우
+사용자가 입력한 ip adress를 따옴표로 감싸서 사용할 수 있습니다.
+
+```python
+if '\'' in ip:
+    return 'not allowed character'
+return run_system(f'ping -c 3 \'{ip}\'')
+```
+> Double Quotes(")를 사용할 경우
+> **dollarsign($)** -> **backquote(`)**
+> 이렇게 해석돼, 모든 입력을 문자열로 처리하는
+> **Single Quotes(')**를 사용해야합니다.
