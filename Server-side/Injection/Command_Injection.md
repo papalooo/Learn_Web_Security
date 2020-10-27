@@ -152,5 +152,13 @@ return run_system(f'ping -c 3 \'{ip}\'')
 ```
 > Double Quotes(")를 사용할 경우
 > **dollarsign($)** -> **backquote(`)**
-> 이렇게 해석돼, 모든 입력을 문자열로 처리하는
+> 이렇게 해석돼, 모든 입력을
+> 문자열로 처리하는
 > **Single Quotes(')**를 사용해야합니다.
+
+### -execve args 인자로 사용
+shell meta 문자로
+해석되지 않게 입력 값을 넣습니다.
+```Shell
+subprocess.Popen(['ping', '-c', '3', ip]) # B
+```
