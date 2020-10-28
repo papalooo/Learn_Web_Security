@@ -24,12 +24,12 @@ Command를 변조할 수 있는 취약점이다.
 템플릿으로 사용돼
 발생하는 취약점이다.
 
-4. Path Traversal</br>
+4. [Path Traversal](./Path_Traversal.md)</br>
 URL / File Path를 사용 시
 사용자의 입력 데이터에 의해
 임의의 경로에 접근하는 취약점입니다.
 
-5. server Side Request Forgery(SSRF)</br>
+5. [server Side Request Forgery(SSRF)](./SSRF.md)</br>
 공격자가 서버에서 변조된 요청을 보낼 수 있는 취약점입니다.
 
 
