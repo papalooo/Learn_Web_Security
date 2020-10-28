@@ -168,3 +168,11 @@ subprocess.Popen(['ping', '-c', '3', ip]) # B
 구현된 라이브러리로 대체 가능합니다.
 `ping3`는 소켓프로그래밍을 통해
 ping기능을 구현한 라이브러리입니다.
+```python
+#! pip install ping3 
+# https://github.com/kyan001/ping3/blob/master/ping3.py
+import ping3
+ping3.ping(ip)
+```
+> 라이브러리의 보안성 및 안전성 등을
+> 검토한 후 사용하여야 합니다.
