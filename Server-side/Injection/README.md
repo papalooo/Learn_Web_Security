@@ -19,7 +19,7 @@ OS Command를 사용 시 사용자의
 입력 데이터에 의해 실행되는
 Command를 변조할 수 있는 취약점이다.
 
-3. Server Side Template Injection</br>
+3. [Server Side Template Injection](./SSTI.md)</br>
 템플릿 변환 도중 사용자의 입력 데이터가
 템플릿으로 사용돼
 발생하는 취약점이다.
