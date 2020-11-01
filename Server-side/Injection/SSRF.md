@@ -30,3 +30,49 @@ Server-side에서 **변조된 요청 / 의도치 않은 서버로 요청**을
 > 작동하는 기능들이 있어
 > SSRF 공격이 발생하면
 > 인프라를 공격하는 취약점이 될 수 있습니다.
+
+
+### 예방법
+
+SSRF 취약점을 방지하기 위해서는
+사용자가 입력한 URL의 Host를 
+미리 화이트리스트방식으로
+검증하는 방법이 있습니다.
+
+미리 신뢰할 수 있는 Domain Name, IP Address를
+화이트리스트에 등록하고 사용자가 입력한
+URL에서 Host부분을 파싱해 화이트리스트에
+있는지 확인합니다.
+
+### - URL Host 화이트리스트 방식 필털이
+
+``` python
+rom urllib.parse import urlparse
+WHITELIST_URL = [
+    'i.imgur.com',
+    'img.dreamhack.io',
+    ...
+]
+SCHEME = ['http', 'https']
+def is_safehost(url):
+    urlp = urlparse(url)
+    if not urlp.scheme in SCHEME:
+        return False
+    hostname = urlp.hostname.lower()
+    if hostname in WHITELIST_URL:
+        return True
+    return False
+print(is_safehost('https://127.0.0.1/'))
+print(is_safehost('https://i.imgur.com/Bsz7RJN.png'))
+```
+> 블랙 리스트 방식으로 검증할 경우
+> http://127.0.0.4/
+> http://0x7f000001/
+> 과 같이 다양한 루프백 주소를 사용하거나
+> Host에 Domain Name을 넣어 
+> DNS Rebinding 공격 등으로 우회할 수 있습니다.
+
+그 외에도 사용자의 URL을 처리하는 서버를
+독립적으로 망 분리를 하여
+SSRF 취약점이 발생하여도 다른 취약점과 
+연계를 하지 못하도록 방지하는 방법이 있습니다.
