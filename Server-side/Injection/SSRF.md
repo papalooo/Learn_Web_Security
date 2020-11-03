@@ -44,7 +44,7 @@ SSRF 취약점을 방지하기 위해서는
 URL에서 Host부분을 파싱해 화이트리스트에
 있는지 확인합니다.
 
-### - URL Host 화이트리스트 방식 필털이
+### - URL Host 화이트리스트 방식 필터링
 
 ``` python
 rom urllib.parse import urlparse
