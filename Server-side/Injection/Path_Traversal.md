@@ -1,5 +1,5 @@
 # Path Traversal
-Path가 사용되는 대푲거인 로직으로는
+Path가 사용되는 대표적인 로직으로는
 URL/File이 있습니다.
 
 URL/File의 Path에는 Parent Directory를 의미하는 구분자 `..`가 있습니다.
